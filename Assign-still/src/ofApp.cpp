@@ -19,7 +19,7 @@ void ofApp::setup(){
     mainCam.setPosition(0, 0, 500); // set initial position for the easyCam 3D viewer
     for (int i=0; i<Maxspherenumber; i++){
         ofSpherePrimitive newsphere;
-        newsphere.set(ofRandom(10,20),30); //set the radius randomly for each sphere in range 10-20
+        newsphere.set(ofRandom(30,50),30); //set the radius randomly for each sphere in range 30-50
         newsphere.mapTexCoordsFromTexture(eye.getTexture()); //assign the texture/image to the sphere
         newsphere.setPosition(ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange)); // assign the x,y,z coordinates as random within the space range
        
