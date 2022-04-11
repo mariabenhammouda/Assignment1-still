@@ -71,7 +71,7 @@ void ofApp::draw(){
         ofPopStyle();
         
     }
-    mainCam.end();
+    mainCam.end(); //end camera view
     ofDisableDepthTest();
     gui.draw(); //draw gui
         
@@ -85,11 +85,9 @@ void ofApp::draw(){
 void ofApp::keyPressed(int key){
         if (key=='f'){
             ofBackground(0); // set the window background to orage
-            for (int i=0; i<7; i++){
+            for (int i=0; i<5; i++){
                 
-               
-             
-                    ofSetColor(255);
+            
                         myline.curveTo(ofRandom(-spaceRange,spaceRange), ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange)); //draw curved polyline with randomized vertices coordinates
                 
                     
