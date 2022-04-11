@@ -5,8 +5,7 @@ The inspiration behind this artwork is the attached photo, having miscellaneous 
 
 I'm satisfied with the outcome, however, see room for improvement. I initially aimed to allow color adjustment via GUI, however, since the eyes have a fixed wrapped texture that can only be called in setup, this feature was not possible. 
 The main components of this artwork are the spheres and lines in 3d space.
-i followed the tutorial https://www.youtube.com/watch?v=rxGXCJeI5yQ to create the floating 3d cubes, then replaced the cubes with spheres. I then used the following to load image and wrap texture. https://openframeworks.cc/learning/02_graphics/how_to_load_and_display_an_image/
-https://openframeworks.cc/ofBook/chapters/textures.html
+i followed the tutorial https://www.youtube.com/watch?v=rxGXCJeI5yQ to create the floating 3d cubes, then replaced the cubes with spheres.
 
 The spheres consume the space dynamically, appear and reappear in various positions and dimensions of the 3d space.
 Likewise, the lines have vertices added to them randomly as the user presses 'f'. Although the vertices and the spheres positions are arbitrary, their coordinates are constrained by an imaginary larger cube that has parameters "Range" which the user can increase through the slider. To draw the collection of spheres I created an array that stores all the spheres created on the screen and looped the sphere.draw() function for a chosen iteration of 10 spheres. The lines are of type polyline and have vertices added to them under a loop with a maximum iteration of 5 as that is a balance of closely packed yet sparse lines.
