@@ -21,7 +21,7 @@ void ofApp::setup(){
         newbox.setPosition(ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange));
        
     for(int x=0; x<6; x++){
-        newbox.setSideColor(x, ofColor(ofRandom(180,199), 0, 57));
+        newbox.setSideColor(x, ofColor::fromHsb(ofRandom(230,255),255,255));
     }
         boxes.push_back(newbox);
     }
