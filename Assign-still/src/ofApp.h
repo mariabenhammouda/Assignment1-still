@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxGui.h"
 
+
 class ofApp : public ofBaseApp{
 
     public:
@@ -21,18 +22,23 @@ class ofApp : public ofBaseApp{
         void windowResized(int w, int h);
         void dragEvent(ofDragInfo dragInfo);
         void gotMessage(ofMessage msg);
+   
+   
     ofEasyCam mainCam;
-    ofBoxPrimitive box;
-    vector<ofBoxPrimitive> boxes;
-    int MaxBoxnumber=20;
+    ofSpherePrimitive sphere;
+    vector<ofSpherePrimitive> spheres;
+    vector<ofSpherePrimitive> sphere0;
+    int Maxspherenumber=20;
     int spaceRange=300;
     ofPolyline myline;
     ofxPanel gui;
-    int perlinHeight;
-    bool white;
+    ofImage eye;
+    
     ofParameterGroup sliderGroup;
     ofParameterGroup mainGroup;
     ofParameter<int> Thickness;
+  
+    
 
 
 

@@ -2,53 +2,69 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-   // ofEnableDepthTest();
+    ofEnableDepthTest();
+   // light.enable();
+    eye.load("Human-eye.jpg");
+    eye.getTexture().setTextureWrap(GL_REPEAT,GL_REPEAT);
     
     sliderGroup.setName("sliders");
-    sliderGroup.add(Thickness.set("Thickness", 1, 1, 5));
-   
+    sliderGroup.add(Thickness.set("Thickness", 1, 0.5, 5));
+    
     
 
     mainGroup.add(sliderGroup);
     gui.setup(mainGroup);
     
     
-    ofBackground(31,81,255); // set the window background to orage
+    ofBackground(48,25,52); // set the window background to orage
     mainCam.setPosition(0, 0, 400); // set initial position for the easyCam 3D viewer
-    for (int i=0; i<MaxBoxnumber; i++){
-        ofBoxPrimitive newbox;
-        newbox.set(50);
-        newbox.setPosition(ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange));
+    for (int i=0; i<Maxspherenumber; i++){
+        ofSpherePrimitive newsphere;
+        newsphere.set(ofRandom(20,50),50);
+        newsphere.mapTexCoordsFromTexture(eye.getTexture());
+        newsphere.setPosition(ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange));
        
-    for(int x=0; x<6; x++){
-        newbox.setSideColor(x, ofColor::fromHsb(ofRandom(230,255),255,255));
-    }
-        boxes.push_back(newbox);
+    spheres.push_back(newsphere);
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     
-   boxes[ofRandom(boxes.size())] .setPosition(ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange));
+   spheres[ofRandom(spheres.size())] .setPosition(ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange));
+    glm::vec3 eyeOrientation(ofRandom(360),ofRandom(360),ofRandom(360));
+    spheres[ofRandom(spheres.size())].setOrientation(eyeOrientation);
    
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    mainCam.begin();
     
+    float time =ofGetSystemTimeMillis()/100;
+    mainCam.begin();
+    eye.getTexture().bind();
+    ofPushMatrix();
     myline.draw();
+    ofRotateDeg(time);
 /*    for (int i=0; i<100; i++) {
             ofDrawLine(-spaceRange, 50+(i*10), spaceRange, 75+(i*5));
         }*/
    
  
-    for( int x=0; x<boxes.size(); x++){
-    boxes[x].draw();
+        
+       for( int x=0; x<spheres.size(); x++){
+        eye.getTexture().bind();
+    spheres[x].draw();
+        eye.getTexture().unbind();
     }
+    
+    
+        
+    ofPopMatrix();
     mainCam.end();
+    ofDisableDepthTest();
     gui.draw();
+    
   
 }
 
@@ -58,26 +74,19 @@ void ofApp::keyPressed(int key){
             for (int i=0; i<7; i++){
                 
                 ofSetLineWidth(Thickness);
-                if (white){
+             
                     ofSetColor(255);
                     
                         myline.addVertex(ofRandom(-spaceRange,spaceRange), ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange));
                     
                     myline.close();}
-                else
-                    ofSetColor(0);
-                
-                    myline.addVertex(ofRandom(-spaceRange,spaceRange), ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange));
-                myline.close();
-                    
-              }
+             
             
-            
-            white=!white;
+        
                 
             }
         
-       // myline.close();
+   
       
         
     
@@ -106,7 +115,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-
+   
 }
 
 //--------------------------------------------------------------

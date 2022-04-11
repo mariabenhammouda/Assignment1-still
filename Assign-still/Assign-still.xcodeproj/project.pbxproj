@@ -456,6 +456,148 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
+			<key>41D696947A13F03723FA6D57</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxDelaunay.h</string>
+				<key>path</key>
+				<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/src/ofxDelaunay.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>0C0BEC37ACBF4D9496E2ED19</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>9BCFD5707C8118D9290A4387</string>
+					<string>41D696947A13F03723FA6D57</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>DF56FBCEB663C7D676E51EF5</key>
+			<dict>
+				<key>fileRef</key>
+				<string>9BCFD5707C8118D9290A4387</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>9BCFD5707C8118D9290A4387</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxDelaunay.cpp</string>
+				<key>path</key>
+				<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/src/ofxDelaunay.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>C626613188B2A78EC5882A68</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>Delaunay.h</string>
+				<key>path</key>
+				<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay/src/Delaunay.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>2ABC0AEE0B69DD249F35B762</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>312732515C6141C476B8422E</string>
+					<string>C626613188B2A78EC5882A68</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>B6E8A697B35AF2615160A92E</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>2ABC0AEE0B69DD249F35B762</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>Delaunay</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>47EE4D87E17124B505AF1D0B</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>B6E8A697B35AF2615160A92E</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>libs</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>0DFCEA6ED3FB0D3CE662B7B4</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>47EE4D87E17124B505AF1D0B</string>
+					<string>0C0BEC37ACBF4D9496E2ED19</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ofxDelaunay-master</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>6F5607CF63007FA9DE933776</key>
+			<dict>
+				<key>fileRef</key>
+				<string>312732515C6141C476B8422E</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>312732515C6141C476B8422E</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>Delaunay.cpp</string>
+				<key>path</key>
+				<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay/src/Delaunay.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
 			<key>6948EE371B920CB800B5AC1A</key>
 			<dict>
 				<key>children</key>
@@ -623,6 +765,11 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay/src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/src</string>
 						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxGui/src</string>
 					</array>
 					<key>MACOSX_DEPLOYMENT_TARGET</key>
@@ -665,6 +812,11 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay/src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/src</string>
 						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxGui/src</string>
 					</array>
 					<key>ICON</key>
@@ -701,6 +853,7 @@ fi
 			<dict>
 				<key>children</key>
 				<array>
+					<string>0DFCEA6ED3FB0D3CE662B7B4</string>
 					<string>480A780D8D0308AE4A368801</string>
 				</array>
 				<key>isa</key>
@@ -3467,6 +3620,11 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay/src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/src</string>
 						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxGui/src</string>
 					</array>
 					<key>MACOSX_DEPLOYMENT_TARGET</key>
@@ -3529,6 +3687,11 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay/src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/src</string>
 						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxGui/src</string>
 					</array>
 					<key>MACOSX_DEPLOYMENT_TARGET</key>
@@ -3555,6 +3718,8 @@ fi
 				<array>
 					<string>E4B69E200A3A1BDC003C02F2</string>
 					<string>E4B69E210A3A1BDC003C02F2</string>
+					<string>6F5607CF63007FA9DE933776</string>
+					<string>DF56FBCEB663C7D676E51EF5</string>
 					<string>0219B45BD4BD866A2BB1F2A0</string>
 					<string>EB01EFFBE8BF5DD99D6FB6C4</string>
 					<string>8FC991E815AABD4C475C9A67</string>
@@ -3664,6 +3829,11 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay/src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/src</string>
 						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxGui/src</string>
 					</array>
 					<key>ICON</key>
@@ -3716,6 +3886,11 @@ fi
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>src</string>
+						<string>src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/libs/Delaunay/src</string>
+						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxDelaunay-master/src</string>
 						<string>../../../../Desktop/of_v0.11.2_osx_release/addons/ofxGui/src</string>
 					</array>
 					<key>ICON</key>
