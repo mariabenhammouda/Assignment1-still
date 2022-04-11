@@ -19,7 +19,6 @@ press 'f' to add lines
 
 Thick lines
 
-![Screen Shot 2022-04-11 at 9 16 44 PM](https://user-images.githubusercontent.com/102983688/162794525-0c1f65a7-6e5c-4fc8-b4ad-d43a57ae753b.png)
 
 thin lines with less dense lines as you move further
 ![Screen Shot 2022-04-11 at 8 49 56 PM](https://user-images.githubusercontent.com/102983688/162791779-01eadf56-317b-400a-bd03-d2790c6da1be.png)
