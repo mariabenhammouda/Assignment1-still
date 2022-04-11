@@ -13,7 +13,7 @@ void ofApp::setup(){
     gui.setup(mainGroup);
     
     
-    ofBackground(255,95,31); // set the window background to orage
+    ofBackground(0); // set the window background to orage
     mainCam.setPosition(0, 0, 400); // set initial position for the easyCam 3D viewer
     for (int i=0; i<MaxBoxnumber; i++){
         ofBoxPrimitive newbox;
@@ -65,7 +65,7 @@ void ofApp::keyPressed(int key){
                     
                     myline.close();}
                 else
-                    ofSetColor(0);
+                    ofSetColor(245,87,51);
                 
                     myline.addVertex(ofRandom(-spaceRange,spaceRange), ofRandom(-spaceRange,spaceRange),ofRandom(-spaceRange,spaceRange));
                 myline.close();
