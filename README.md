@@ -8,6 +8,10 @@ The colors I chose although are vibrant and contrasting. White,pinks and reds ar
 
 The code has rules that the lines are drawn only at a range bordered by the spheres, hence there are no lines where there are no spheres. Since the range is a variable that can be controlled by the gui slider, the user can create art pieces by decreasing the space range to create more dense lines and vice versa. Ultimately, regardless of the change in space range parameter, the whole of the artwork is enclosed by a larger cube with a length/width/height variable range.
 
+
+requires ofxGui
+press 'f' to add lines
+
 Thick lines, more dense lines in the center
 ![Screen Shot 2022-04-11 at 8 44 01 PM](https://user-images.githubusercontent.com/102983688/162792500-7514ee6c-c3b1-40e1-8cd1-8f281dbdcb17.png)
 thin lines with less dense lines as you move further
