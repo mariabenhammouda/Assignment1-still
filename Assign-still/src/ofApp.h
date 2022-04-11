@@ -29,7 +29,7 @@ class ofApp : public ofBaseApp{
     vector<ofSpherePrimitive> spheres;
     vector<ofSpherePrimitive> sphere0;
     int Maxspherenumber=20;
-    int spaceRange=300;
+    //int spaceRange=300;
     ofPolyline myline;
     ofxPanel gui;
     ofImage eye;
@@ -37,6 +37,9 @@ class ofApp : public ofBaseApp{
     ofParameterGroup sliderGroup;
     ofParameterGroup mainGroup;
     ofParameter<int> Thickness;
+    ofParameter<int> spaceRange;
+    ofParameter<bool> Rbc;
+    float linepercent;
   
     
 
