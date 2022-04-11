@@ -14,5 +14,4 @@ thin lines with less dense lines as you move further
 ![Screen Shot 2022-04-11 at 8 49 56 PM](https://user-images.githubusercontent.com/102983688/162791779-01eadf56-317b-400a-bd03-d2790c6da1be.png)
 
 elegant piece
-sercontent.com/102983688/162791762-e9e157db-d7b1-47c1-a628-ff358f7fad9a.png)
 ![Screen Shot 2022-04-11 at 8 50 18 PM](https://user-images.githubusercontent.com/102983688/162791787-82a64f1c-828e-4f8f-bcd1-3552787dc27e.png)
