@@ -97,9 +97,7 @@ void ofApp::keyPressed(int key){
             myline.close();
             linepercent=0;
             
-            if (key =='c'){
-                myline.clear();
-            }
+           
                 
             }
         
