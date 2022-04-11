@@ -1,6 +1,6 @@
 # Assignment1-still
  
-The inspiration behind this artwork is the attached photo, having miscellaneous objects and line floating in space.
+The inspiration behind this artwork is the attached photo, having miscellaneous objects and line floating in space with a twist. The theme is anatomy, with the eyeballs floating around and a redbloodcell flowing through it's path.
 ![Screen Shot 2022-04-10 at 7 46 27 PM](https://user-images.githubusercontent.com/102983688/162793013-aa020fb0-9b71-447e-b14b-7b0b9debbd62.png)
 
 I'm satisfied with the outcome, however, see room for improvement. I initially aimed to allow color adjustment via GUI, however, since the eyes have a fixed wrapped texture that can only be called in setup, this feature was not possible. 
