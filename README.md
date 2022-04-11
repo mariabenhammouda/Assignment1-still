@@ -17,8 +17,10 @@ The code has rules that the lines are drawn only at a range bordered by the sphe
 requires ofxGui
 press 'f' to add lines
 
-Thick lines, more dense lines in the center
-![Screen Shot 2022-04-11 at 8 44 01 PM](https://user-images.githubusercontent.com/102983688/162792500-7514ee6c-c3b1-40e1-8cd1-8f281dbdcb17.png)
+Thick lines
+
+![Screen Shot 2022-04-11 at 9 16 44 PM](https://user-images.githubusercontent.com/102983688/162794525-0c1f65a7-6e5c-4fc8-b4ad-d43a57ae753b.png)
+
 thin lines with less dense lines as you move further
 ![Screen Shot 2022-04-11 at 8 49 56 PM](https://user-images.githubusercontent.com/102983688/162791779-01eadf56-317b-400a-bd03-d2790c6da1be.png)
 
